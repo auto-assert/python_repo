@@ -52,6 +52,33 @@ Verify the version
 
 `poetry install`
 
+### Run Flask API
+
+Activate Poetry Shell
+
+`poetry shell`
+
+Run the Application
+
+`python run.py`
+
+Use Postman to POST to http://127.0.0.1:5000/user using the following test json in the body:
+```
+    {
+        "username": "john_doe",
+        "password": "securepassword",
+        "profile": {
+            "email": "john_doe@example.com",
+            "name": "John Doe",
+            "age": 30
+        }
+    }
+```
+
+This should return status 201 with the added user
+
+Then make a GET request to http://127.0.0.1:5000/users to receive and array of users returned with status 200
+
 ### Run Unit tests
 
 The following command with write the coverage report to coverage.json, coverage.lcov, and to htmlcov/index.html
