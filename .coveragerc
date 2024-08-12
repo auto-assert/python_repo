@@ -1,0 +1,4 @@
+[run]
+source = flask_app
+omit =
+    */tests/*
