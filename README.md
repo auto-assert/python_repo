@@ -48,11 +48,11 @@ Verify the version
 
 `poetry --version`
 
-### Install application dependencies
+## Install application dependencies
 
 `poetry install`
 
-### Run Flask API
+## Run Flask API
 
 Activate Poetry Shell
 
@@ -79,7 +79,7 @@ This should return status 201 with the added user
 
 Then make a GET request to http://127.0.0.1:5000/users to receive and array of users returned with status 200
 
-### Run Unit tests
+## Run Unit tests
 
 The following command with write the coverage report to coverage.json, coverage.lcov, and to htmlcov/index.html
 
